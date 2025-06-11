@@ -134,7 +134,7 @@ export const moviesData = [
     category: "Movie",
     rating: "E",
     isBookmarked: false,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "7",
@@ -150,7 +150,7 @@ export const moviesData = [
     category: "TV Series",
     rating: "PG",
     isBookmarked: false,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "8",
@@ -166,7 +166,7 @@ export const moviesData = [
     category: "Movie",
     rating: "18+",
     isBookmarked: true,
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "9",

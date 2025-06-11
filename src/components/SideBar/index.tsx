@@ -46,6 +46,10 @@ const SideBar = () => {
         width:{
             sm:"100%",
             lg:200
+        },
+        height:{
+            xs:"auto",
+            lg:"100%"
         }
     }} >
         <Box
@@ -108,7 +112,7 @@ const SideBar = () => {
                                     width="18"
                                     height="18" />
                                 </span>
-                                <Typography  sx={{ display: {  md: 'none', lg:'block' } }}>{item.name}</Typography>
+                                <Typography  sx={{ display: { xs:'none',sm:'none', md: 'none', lg:'block' } }}>{item.name}</Typography>
                                 
                             </Box>
                         </Link>)

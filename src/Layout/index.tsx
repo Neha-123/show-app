@@ -20,12 +20,28 @@ const Layout = ({children}:LayoutProps) => {
             color:"white",
             padding:3,
             gap:3,
-            overflowY:"hidden",
-            height:"100vh"
+            overflow:"hidden",
+             height: "99vh"
         }}
     >
         <SideBar />
-        <Box sx={{width:"100%", overflowY:"scroll"}} >{children}</Box>
+        <Box sx={{width:"100%", overflowY:"auto", marginBottom:'30px',marginTop:'30px',
+             "&::-webkit-scrollbar-track": {
+                boxShadow: "inset 0 0 5px grey",
+                borderRadius: 10,
+              },
+              "&::-webkit-scrollbar-thumb": {
+                backgroundColor: "#888",
+                borderRadius: 10,
+              },
+              "&::-webkit-scrollbar-thumb:hover": {
+                backgroundColor: "#555",
+              },
+          
+              // Optional: Hide scrollbar in Firefox but keep scroll
+              scrollbarWidth: "thin", // Firefox
+              scrollbarColor: "#888 #171616", // Firefox
+        }} >{children}</Box>
     </Box>
     
   )
